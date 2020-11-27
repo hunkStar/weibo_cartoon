@@ -1,0 +1,307 @@
+.ComicCont {
+  width: 100%;
+  height: 100%;
+  .Headers {
+    width: 100%;
+    height: 44px;
+    background: red;
+    position: fixed;
+  }
+
+  .Content {
+    width: 100%;
+    height: calc(100vh - 44px);
+    position: absolute;
+    top: 44px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .banner {
+      width: 100%;
+      height: 210px;
+      img {
+        width: 100%;
+        height: 210px;
+      }
+      .mask {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        top: 110px;
+        .comic_article {
+          width: 100%;
+          height: 67.2px;
+          .comic_name {
+            width: 100%;
+            height: 25.6px;
+            font-size: 20px;
+            color: white;
+            padding: 0 16px;
+            line-height: 25.6px;
+            margin-top: 8px;
+            box-sizing: border-box;
+          }
+          .tags_hot {
+            width: 100%;
+            height: 25.6px;
+            padding: 0 16px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            .tags {
+              width: 174.85px;
+              height: 17.6px;
+              font-size: 16px;
+              color: white;
+            }
+            .hot {
+              width: 168.36px;
+              height: 17.6px;
+              font-size: 16px;
+              color: white;
+              padding-left: 60px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+
+    .reading {
+      width: 100%;
+      height: 48px;
+      background: white;
+      padding: 8px 16px 4px 16px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .Noreading {
+        width: 64px;
+        height: 20.8px;
+        font-size: 16px;
+        color: #666697;
+      }
+      .reading {
+        width: 88px;
+        height: 36px;
+        border-radius: 3px;
+        background: #f75d79;
+        font-size: 14px;
+        color: white;
+        border: 0;
+        line-height: 36px;
+      }
+    }
+
+    .directory {
+      width: 100%;
+      height: 52px;
+      background: white;
+      .menu {
+        width: 100%;
+        height: 52px;
+        padding: 4px 16px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        .detail {
+          width: 68px;
+          height: 24px;
+          color: #ccc;
+          font-size: 18px;
+        }
+        .catalog {
+          width: 68px;
+          height: 24px;
+          color: #ccc;
+          font-size: 18px;
+        }
+        .order {
+          width: 207.2px;
+          height: 24px;
+          padding-left: 100px;
+          box-sizing: border-box;
+          .allcont {
+            display: block;
+            width: 62px;
+            height: 24px;
+            float: left;
+            line-height: 24px;
+            margin-right: 10px;
+          }
+          .inverted_order {
+            display: block;
+            width: 34px;
+            height: 24px;
+            float: left;
+            line-height: 24px;
+          }
+          .positive_order {
+            float: left;
+            display: block;
+            width: 34px;
+            height: 24px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .detail_menu {
+      width: 100%;
+      .synopsis {
+        width: 100%;
+        height: 214px;
+        padding: 8px;
+        box-sizing: border-box;
+        background: #f8f8f8;
+        .comic_synopsis {
+          width: 100%;
+          height: 160px;
+          border-radius: 4px;
+          padding: 11px 8px;
+          box-sizing: border-box;
+          background: white;
+          font-size: 14px;
+          color: #666;
+          line-height: 24px;
+          text-overflow: -o-ellipsis-lastline;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+        }
+        .author {
+          width: 100%;
+          height: 36px;
+          padding: 0 16px;
+          padding-top: 8px;
+          box-sizing: border-box;
+          color: #666;
+          display: flex;
+          align-items: center;
+          background: white;
+          .comic_author {
+            width: 42px;
+            height: 24px;
+            line-height: 24px;
+          }
+          .headportrait {
+            width: 26px;
+            height: 26px;
+            margin-left: 6px;
+            border-radius: 50%;
+            img {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+            }
+          }
+          .author_name {
+            margin-left: 8px;
+            width: 150px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .comment {
+        width: 100%;
+        background: white;
+        .hotComment {
+          width: 100%;
+          height: 44px;
+          padding-left: 8px;
+          font-size: 18px;
+          line-height: 44px;
+          color: #666;
+        }
+        .commentMenu {
+          width: 100%;
+          //   height: 329px;
+          padding: 8px 16px 0 16px;
+          box-sizing: border-box;
+          .userinfo {
+            width: 100%;
+            margin-bottom: 15px;
+            .userbox {
+              width: 100%;
+              height: 30px;
+              display: flex;
+              justify-content: space-between;
+              .user_logo {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                img {
+                  width: 32px !important;
+                  height: 32px !important;
+                  border-radius: 50%;
+                }
+              }
+              .user_name {
+                margin-left: 8px;
+                width: 150px;
+                height: 32px;
+                line-height: 32px;
+              }
+              .creatTime {
+                width: 150px;
+                height: 32px;
+                line-height: 32px;
+                margin-left: 130px;
+                font-size: 12px;
+                color: #ccc;
+              }
+            }
+
+            .userComment {
+              width: 100%;
+              padding-left: 40px;
+              padding-right: 5px;
+              box-sizing: border-box;
+              // background: #ccc;
+              .mycomment {
+                width: 100%;
+                // height: 48px;
+                font-size: 16px;
+                color: #666;
+                text-overflow: -o-ellipsis-lastline;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+              }
+              .writeback {
+                width: 100%;
+                background: #efefef;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .catalog_menu {
+      width: 100%;
+      padding: 10px 8px 0 8px;
+      box-sizing: border-box;
+      .section {
+        background: white;
+        width: 100%;
+        height: 48px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        line-height: 48px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        color: #666;
+      }
+    }
+  }
+}

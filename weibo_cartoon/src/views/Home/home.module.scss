@@ -1,0 +1,372 @@
+    .home {
+        width: 100%;
+        height: 100%;
+        .header {
+            position: fixed;
+            width: 100%;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #cccccc;
+            background: #fff;
+            .header_left {
+                padding-left: 16px;
+                width: 103px;
+                height: 24px;
+                img {
+                    width: 87px;
+                    height: 24px;
+                }
+            }
+            .header_right {
+                width: 132px;
+                height: 44px;
+                display: flex;
+                .gender_switch {
+                    width: 44px;
+                    height: 44px;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                .search {
+                    width: 44px;
+                    height: 44px;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                .users {
+                    width: 44x;
+                    height: 44px;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            position: absolute;
+            height: calc(100vh - 44px);
+            top: 44px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: #F8F8F8;
+            .swipeShow {
+                width: 100%;
+                height: 222px;
+                padding-top: 8px;
+                display: flex;
+                background: #fff;
+                .swipeShow_box {
+                    margin: 0 16px;
+                    width: 344px;
+                    height: 214px;
+                    .lunboImg {
+                        width: 344px;
+                        vertical-align: top;
+                        border-radius: 10px;
+                        height: 214px
+                    }
+                }
+            }
+            // nav区
+            .nav {
+                width: 100%;
+                height: 120px;
+                display: flex;
+                padding: 16px;
+                justify-content: space-between;
+                box-sizing: border-box;
+                text-align: center;
+                background: #fff;
+                .navItem {
+                    width: 60px;
+                    height: 88px;
+                    img {
+                        width: 100%;
+                        height: 60px;
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 14px;
+                        margin: 0;
+                        width: 100%;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        // 漫画推荐区
+        .recommend_block {
+            width: 100%;
+            border-radius: 8px;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            .recommend_header {
+                background: #fff;
+                padding: 0 16px;
+                height: 44px;
+                line-height: 44px;
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .recommend_header_title {
+                    font-size: 18px;
+                    color: #666;
+                    padding-left: 26px;
+                    position: relative;
+                    &:before {
+                        position: absolute;
+                        top: 11px;
+                        left: 0;
+                        content: "";
+                        width: 22px;
+                        height: 22px;
+                        background: url("https://img.manhua.weibo.com/static/b/vcomic-h5/dist/img/default_avatar.8bc0dfd7.png");
+                        background-size: cover;
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .recommend_header_more {
+                    font-size: 12px;
+                    color: #fff;
+                    width: 42px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    background: #4a90e2;
+                    border-radius: 10px;
+                }
+            }
+            .recommend_content {
+                padding: 0 16px;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                background: #fff;
+                .recommend_comics {
+                    margin-bottom: 8px;
+                    background: #fff;
+                    .comic_cover_container {
+                        width: 100%;
+                        overflow: hidden;
+                        .comic_cover {
+                            width: 100%;
+                        }
+                        .comic_cover_info {
+                            margin: 0 8px 0 0;
+                            .comic_cover_title {
+                                color: #666;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                min-width: 1px;
+                                font-size: 14px;
+                                margin-top: 8px;
+                            }
+                            .comic_cover_desc {
+                                color: #999;
+                                font-size: 12px;
+                                margin-bottom: 6px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                min-width: 1px;
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .threeClassic {
+                height: 415px;
+                width: 375px;
+                .recommend_comics:first-child {
+                    width: 100%;
+                    height: 262px;
+                    .comic_cover_container {
+                        height: 100%;
+                        width: 344px;
+                        .comic_cover {
+                            border-radius: 8px;
+                            height: 214px;
+                            width: 100%;
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                        }
+                    }
+                }
+                .recommend_comics:nth-child(2),
+                .recommend_comics:nth-child(3) {
+                    width: 166px;
+                    height: 138px;
+                    .comic_cover_container {
+                        height: 100%;
+                        width: 100%;
+                        .comic_cover {
+                            border-radius: 8px;
+                            width: 100%;
+                            height: 90px;
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                        }
+                    }
+                }
+                .recommend_comics:nth-child(2) {
+                    margin-right: 10px;
+                }
+            }
+            .fourClassic {
+                height: 321px;
+                width: 375px;
+                .recommend_comics {
+                    height: 152px;
+                    flex: 1 0 40%;
+                    overflow: hidden;
+                    max-width: 167px;
+                    .comic_cover_container {
+                        height: 152px;
+                        width: 167px;
+                        .comic_cover {
+                            height: 105px;
+                            width: 167px;
+                            border-radius: 8px;
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                        }
+                    }
+                }
+                .recommend_comics:nth-child(odd) {
+                    margin-right: 8px;
+                }
+            }
+            .threeColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0;
+                .recommend_comics {
+                    margin-bottom: 16px;
+                    height: 90px;
+                    width: 100%;
+                    .comic_cover_container {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        overflow: hidden;
+                        padding: 0 16px 16px;
+                        box-sizing: border-box;
+                        .comic_cover {
+                            width: 160px !important;
+                            height: 90px;
+                            margin-right: 4px;
+                            border-radius: 4px;
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                        }
+                        .comic_cover_info {
+                            flex: 1;
+                            padding-right: 1rem;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                            .comic_cover_title {
+                                margin-top: 4px;
+                                color: #333;
+                                line-height: 24px;
+                                padding-bottom: 8px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                min-width: 1px;
+                            }
+                            .comic_horizontal_author {
+                                font-size: 12px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: center;
+                                height: 1rem;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                min-width: 1px;
+                                img {
+                                    float: left;
+                                    width: 1rem;
+                                    height: 1rem;
+                                }
+                            }
+                            .comic_horizontal_author:nth-child(2) {
+                                padding-bottom: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .threeRow {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 100px;
+                .recommend_comics {
+                    width: 109px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    box-sizing: border-box;
+                    background: #fff;
+                    .comic_cover_container {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        overflow: hidden;
+                        .comic_cover {
+                            height: 150px;
+                            border-radius: 8px;
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: cover;
+                        }
+                        .comic_cover_info {
+                            align-items: center;
+                            text-align: center;
+                            margin: 0 8px 0 0;
+                            .comic_cover_title {
+                                font-size: 12px;
+                                align-items: center;
+                                margin: 8px 0 0 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                min-width: 1px;
+                                .comic_cover_desc {
+                                    color: #999;
+                                    margin-bottom: 6px;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    min-width: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

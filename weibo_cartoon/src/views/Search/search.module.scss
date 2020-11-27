@@ -1,0 +1,245 @@
+.search {
+    background: #fff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    .search_header {
+        flex-shrink: 0;
+        margin: 16px 16px 0;
+        display: flex;
+        .search_ferame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 288px;
+            height: 44px;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .1);
+            span {
+                flex-shrink: 0;
+                width: 2.75rem;
+                height: 2.75rem;
+                background-image: url("../../assets/images/fdj.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            input {
+                flex: 1;
+                background: none;
+                outline: none;
+                border: 0;
+                padding-top: 4px;
+                width: 206px;
+                height: 22px;
+                line-height: normal;
+                font-size: 14px;
+                color: #666;
+                vertical-align: middle;
+            }
+            .search_clear_cion {
+                flex-shrink: 0;
+                width: 20px;
+                height: 20px;
+                margin: 12px 18px 12px 0;
+                background-image: url(../../assets/images/clearVal.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .search_fix_btn {
+            width: 44px;
+            height: 1.5rem;
+            flex-direction: row;
+            margin: 10px 0 10px 11px;
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .search_footer {
+        .search_page {
+            .hot_search {
+                padding: 16px 16px 5px;
+                .hot_serch_header {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    .search_title {
+                        font-size: 18px;
+                        color: #666;
+                        letter-spacing: 0;
+                        line-height: 44px;
+                        font-weight: 700;
+                    }
+                    .refresh {
+                        width: 44px;
+                        height: 44px;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        background-image: url(../../assets/images/fresh.png);
+                    }
+                }
+                .hot_search_conent {
+                    list-style: none;
+                    overflow: hidden;
+                    height: 308px;
+                    width: 344px;
+                    margin: 0;
+                    padding: 0;
+                    .search_label {
+                        list-style: none;
+                        overflow: hidden;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #efefef;
+                        border-radius: 2px;
+                        margin-right: 16px;
+                        margin-bottom: 8px;
+                        padding: 0 17px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #666;
+                        font-size: 14px;
+                        span {
+                            text-decoration: none;
+                            height: 36px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+        .history {
+            padding: 5px 16px 10px;
+            .hidden {
+                display: none;
+            }
+            .hot_serch_header {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                .search_title {
+                    font-size: 18px;
+                    color: #666;
+                    letter-spacing: 0;
+                    line-height: 44px;
+                    font-weight: 700;
+                }
+                .clear {
+                    width: 44px;
+                    height: 44px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-image: url(../../assets/images/clear.png);
+                }
+            }
+            .hot_search_conent {
+                list-style: none;
+                overflow: hidden;
+                width: 344px;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                padding-bottom: 100px;
+                .search_label {
+                    list-style: none;
+                    overflow: hidden;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: #efefef;
+                    border-radius: 2px;
+                    margin-right: 16px;
+                    margin-bottom: 8px;
+                    padding: 0 17px;
+                    height: 36px;
+                    line-height: 36px;
+                    color: #666;
+                    font-size: 14px;
+                    span {
+                        text-decoration: none;
+                        height: 36px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+    .search_result {
+        flex-grow: 1;
+        flex-direction: column;
+        padding-top: 24px;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .loadMoreWraper {
+            flex-grow: 1;
+            overflow: auto;
+            .loadMore {
+                .search_list {
+                    margin: 0 16px 16px;
+                    display: flex;
+                    .search_item {
+                        width: 21.4375rem;
+                        height: 6rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        align-items: flex-start;
+                        .search_item_img {
+                            width: 72px;
+                            height: 96px;
+                            .comic_cover {
+                                width: 100%;
+                                height: 100%;
+                                background-repeat: no-repeat;
+                                background-position: 50%;
+                                background-size: cover;
+                            }
+                        }
+                        .search_item_info {
+                            flex: 1;
+                            margin-left: 8px;
+                            .search_item_title {
+                                height: 24px;
+                                font-size: 14px;
+                                color: #666;
+                                letter-spacing: 0;
+                                line-height: 24px;
+                            }
+                            .sina_nickname {
+                                height: 24px;
+                                font-size: 12px;
+                                color: #999;
+                                letter-spacing: 0;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .moreList {
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    text-align: center;
+                    color: #999b9a;
+                    img {
+                        width: 36px;
+                        animation: circle 1s linear 1s infinite;
+                        pointer-events: none;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}
